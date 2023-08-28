@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleDecorator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4o-ra-DXp">
+                                <rect key="frame" x="196.66666666666666" y="438.66666666666669" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wV2-JW-iMF">
+                                <rect key="frame" x="137" y="485" width="119.33333333333331" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rz-zX-LHl">
+                                        <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Default PC"/>
+                                        <connections>
+                                            <action selector="selectBasePCPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uj4-1R-rCc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHO-N1-8UW">
+                                        <rect key="frame" x="0.0" y="50" width="119.33333333333333" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Mid RAM PC"/>
+                                        <connections>
+                                            <action selector="selectMidRamPCPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="VL3-Dd-jgz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHe-6e-V8H">
+                                        <rect key="frame" x="0.0" y="100" width="119.33333333333333" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="BIG RAM PC"/>
+                                        <connections>
+                                            <action selector="selectBigRamPCPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="HAM-kh-GCG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hu-pQ-u6h">
+                                        <rect key="frame" x="0.0" y="150" width="119.33333333333333" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="WITH AI PC"/>
+                                        <connections>
+                                            <action selector="selectWithAIPCPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="yab-9f-sbf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="P4o-ra-DXp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2tc-wX-tRf"/>
+                            <constraint firstItem="P4o-ra-DXp" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="PVg-1D-mh8"/>
+                            <constraint firstItem="wV2-JW-iMF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WzG-XW-SPg"/>
+                            <constraint firstItem="wV2-JW-iMF" firstAttribute="top" secondItem="P4o-ra-DXp" secondAttribute="bottom" constant="46.333333333333314" id="Yxo-Nh-pPW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wV2-JW-iMF" secondAttribute="bottom" constant="133" id="v3w-Bq-8Vg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pcPriceLabel" destination="P4o-ra-DXp" id="LGA-fc-IEa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
